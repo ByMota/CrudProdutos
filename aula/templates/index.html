@@ -113,6 +113,11 @@
       <br />
       <input type="submit" value="Salvar" />
     </form>
-    <footer></footer>
+
+    <h1>Excluir Produto</h1>
+    <p>Deseja excluir o produto "{{ produto.nome }}"?</p>
+    <form method="POST" action="/produtos/excluir/{{ produto.id }}">
+      <input type="submit" value="Excluir" />
+    </form>
   </body>
 </html>
